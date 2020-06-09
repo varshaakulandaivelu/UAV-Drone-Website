@@ -1,0 +1,171 @@
+<html>
+<head>
+<title>about</title>
+<style>
+#mainDiv{
+
+width:100px;
+height:200px;
+margin: 200px auto;
+perspective:20000px;
+
+
+}
+#boxDiv{
+width:200px;
+transform-style: preserve-3d;
+animation: rotate 15s linear infinite;
+}
+#boxDiv div{
+position:absolute;
+width:400px;
+height:400px;
+border:5px solid #253F51;
+opacity:0.8;
+color:white;
+font:80px impact;
+text-align:center;
+
+}
+#front{
+transform:translateZ(200px);
+background:#253F51;
+}
+#back{
+transform:rotateY(180deg) translateZ(200px);
+background:#253F51;
+}
+#left{
+transform:rotateY(-90deg) translateX(-200px);
+transform-origin:left;
+background:#253F51;
+}
+#right{
+
+transform:rotateY(90deg) translateX(200px);
+transform-origin:right;
+background:#253F51;
+}
+#top{
+transform:rotateX(-90deg) translateY(-200px);
+transform-origin:top;
+background:#253F51;
+}
+#bottom{
+transform:rotateX(90deg) translateY(200px);
+transform-origin:bottom;
+background:#253F51;
+}
+
+@keyframes rotate{
+0%{transform:rotateY(0);}
+100%{transform:rotateY(360deg);}
+}
+nav{
+	width:100vw;	
+	height:80%;
+}
+ul
+{
+    float:right;
+	list-style-type:none;
+	margin:0;
+	padding:10px;
+	display:flex;
+	align-items:center;
+	flex-direction:row;
+	justify-content:space-around;
+}
+li{
+	position:relative;
+	padding:0 20px;
+	height:100%;
+	display:flex;
+}
+a
+{
+    z-index:1;
+	color:#000000;
+	text-decoration:none;
+	font-family:'Poppins',sans-serif;
+	font-weight:500;
+	font-size:20px;
+	padding:10px 30px;
+	
+}
+li:before
+{
+	content:"";
+	position:absolute;
+	height:33.33%;
+	width:0;
+	background-color:#253F51;
+	right:0;
+	z-index:1;
+	top:33.33%;
+	transition: all 0.5s;
+
+
+}
+li:after
+{   
+	content:"";
+	position:absolute;
+	height:33.33%;
+	width:0;
+	background-color:#253F51;
+	left:0;
+	z-index:1;
+	bottom:0;
+	transition: all 0.5s;
+
+
+}
+a:before{
+	content:"";
+	position:absolute;
+	height:33.33%;
+	width:0;
+	background-color:#253F51;
+	left:0;
+	z-index:0;
+	bottom:66.66%; 
+	transition: all 0.5s;
+}
+li:hover:before,
+li:hover:after,
+li:hover a:before
+{
+	width:100%;
+}
+li a:hover,a:active
+{
+color:white;
+}
+
+
+</style>
+</head>
+<body>
+<nav>
+<ul>
+<li><a href="indexx.html">Home</a></li>
+<li><a href="aboutt.html">About</a></li>
+<li><a href="sponsor.html">Sponsor</a></li>
+<li><a href="recruitment.html">Recruitment</a></li>
+<li><a href="cont.html">Contact</a></li>
+</ul>
+</nav>
+
+<div id="mainDiv">
+<div id="boxDiv">
+<div id="front"><br>RESCUE DRAGONS</div>
+<div id="back"><br>rescue dragons</div>
+<div id="left"><br>RESCUE DRAGONS</div>
+<div id="right"><br>rescue dragons</div>
+<div id="top"><br>rescue dragons</div>
+<div id="bottom"><br>rescue dragons</div>
+</div>
+</div>
+</body>
+</html>

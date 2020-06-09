@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RESCUE DRAGONS
+</title>
+<style>
+.ni{
+width:calc(100%/2);
+overflow:hidden;
+float:left;
+padding:40px 0;
+}
+.logo
+{
+float:left;
+position:fixed;
+text-align:center;
+width:50%;
+height:70%;
+overflow:hidden;
+}
+nav{
+	width:100vw;	
+	height:80%;
+}
+ul
+{
+    float:right;
+	list-style-type:none;
+	margin:0;
+	padding:10px;
+	display:flex;
+	align-items:center;
+	flex-direction:row;
+	justify-content:space-around;
+}
+li{
+	position:relative;
+	padding:0 20px;
+	height:100%;
+	display:flex;
+}
+a
+{
+    z-index:1;
+	color:#000000;
+	text-decoration:none;
+	font-family:'Poppins',sans-serif;
+	font-weight:500;
+	font-size:20px;
+	padding:10px 30px;
+	
+}
+li:before
+{
+	content:"";
+	position:absolute;
+	height:33.33%;
+	width:0;
+	background-color:#253F51;
+	right:0;
+	z-index:1;
+	top:33.33%;
+	transition: all 0.5s;
+
+
+}
+li:after
+{   
+	content:"";
+	position:absolute;
+	height:33.33%;
+	width:0;
+	background-color:#253F51;
+	left:0;
+	z-index:1;
+	bottom:0;
+	transition: all 0.5s;
+
+
+}
+a:before{
+	content:"";
+	position:absolute;
+	height:33.33%;
+	width:0;
+	background-color:#253F51;
+	left:0;
+	z-index:0;
+	bottom:66.66%; 
+	transition: all 0.5s;
+}
+li:hover:before,
+li:hover:after,
+li:hover a:before
+{
+	width:100%;
+}
+li a:hover,a:active
+{
+color:white;
+}
+p{
+text-align:center;
+font-size:15px;
+color:white;
+}
+.spo{
+text-align:center;
+width:50%;
+height:50%;
+padding-left:30%;
+border-radius:80px;	
+}
+.back{
+background-color:#253F51;
+}
+</style>
+</head>
+<body>
+<nav>
+<ul>
+<li><a href="indexx.html">Home</a></li>
+<li><a href="aboutt.html">About</a></li>
+<li><a href="sponsor.html">Sponsor</a></li>
+<li><a href="recruitment.html">Recruitment</a></li>
+<li><a href="cont.html">Contact</a></li>
+
+</ul>
+</nav>
+<div class="ni">
+<img class="logo" src="logo1.png">
+</div>
+<div class="ni">
+<div class="back">
+<img class="spo" src="sponsor.jpg">
+<p><b>VELAMMAL ENGINEERING COLLEGE</br>IEDC-Innovation and 
+Entrepreneurship Development Cell</b></p>
+<img class="spo" src="ins.jpg">
+<p><b>INSIGNIA</b></p>
+</br></br>
+<p><b>20th SENSE BUSINESS</b></p>
+</br></br>
+</div>
+</div>
+</body>
+</html>
